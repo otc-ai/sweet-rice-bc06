@@ -1,0 +1,30 @@
+{
+  "name": "sweet-rice-bc06",
+  "main": "./dist/index.js",
+  "assets": {
+    "directory": "./dist"
+  },
+  "compatibility_date": "2025-04-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": {
+    "enabled": true
+  },
+  "upload_source_maps": true,
+  "vars": {
+    "EXAMPLE_VALUE": "example_value"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "cold-mode-2f5b-d1",
+      "database_id": "77b59aed-7a2f-4401-8637-30fcb94dbfe1"
+    }
+  ],
+  "workflows": [
+    {
+      "name": "sweet-rice-bc06-customer-workflow",
+      "binding": "CUSTOMER_WORKFLOW",
+      "class_name": "CustomerWorkflow"
+    }
+  ]
+}
